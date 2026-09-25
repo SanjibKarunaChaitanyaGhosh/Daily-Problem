@@ -9,11 +9,16 @@ for i in range(1,6):
     print()
 
 
-for i in range(1,6):
-    
-    print(i*"b",end=" ")
+def ReversePyramid(n):
 
-    for k in range(1,6-i):
-        print("*",end=" ")
+    for i in range(1,n):
+        
+        print(i*" ",end=" ")
 
-    print()
+        for k in range(1,n-i):
+            print("*",end=" ")
+
+        print()
+
+n=int(input("Enter any number : "))
+ReversePyramid(n)
